@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><!--todo debe estar dentro de esto ya que indicara el principio y el fin del codigo-->
+<head>
+    
+    <title>mi primera web</title><!--sirve para darle el titulo que aparece en la ventana-->
+    <style>
+        table, td, th {
+            border: 1px solid black;
+    
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1>Mi primera pagina web</h1><!--el numero que acompaña la h designa el tamaño de la fuente-->
+    <p>esta es la explicacion de como estoy haciendo mi primera pagina web</p><!--<p></p> es para escribir parrafos diferentes-->
+    <p> encontre un video que "decia aprende html en una hora y media" y le di click</p>
+    <p>entonces decidi que en vez de estar proclastinando deberia de aprende algo nuevo bastante interesante</p>
+    <p>ademas de que el tipo del video se veia bien carismatico y comico</p>
+    <p>entonces aqui estoy redactando mi primer parrafo en mi primera pagina web</p>
+    <hr> <!-- esto es para hacer una linea que separe los textos-->
+   
+   
+    <h2>Mi segundo heading</h2><!--<h1></h1> sirven para hacer los titulos que los motores de busqueda usan-->
+    <p>este lo usare para <span>la importancia de span</span> , este es mas importante al programar con css pero es bueno aprenderlo
+    span realmente no se muestra en la pagina web pero con ayuda de css podremos asignarle ciertas caracteristicas a ese texto seleccionado, 
+el cual puede ser color, tamano de texto, <span style="color: blue;"> entre otras caracteristicas. este texto seleccionado de azul lo muestra</span>
+</p>
+   
+
+<h3>Mi tercer heading</h3>
+    <P> en este parrafo ejemplificare los saltos de linea los cuales se pueden dar con la etiqueta br entre los operadores relacionales <br>mayor que y menor que<br><br> los saltos de linea se pueden acumular y cada br que aparezca en el parrafo sera un salto de linea</P>
+   
+   
+   
+    <h4>Mi cuarto headind</h4>
+    <a href="https://www.instagram.com/david_leo_pv/"> este texto contiene un hipervinculo <br> el cual si presionas te llevara a mi perfil de instagram
+    <br>href="https://www.instagram.com/david_leo_pv/"  esto es para hacer el hipervinculo pero cargado a la misma pagina <br><br><br>
+en cambio si implementamos antes del href: tarjet="_blank" lo abrira en una nueva pestaña</a>
+<a target="_blank" href="https://www.instagram.com/david_leo_pv/">este texto tambien te lleva a mi perfil de instagram pero en una pestaña nueva</a>
+   
+
+<h5>Mi cuarto heading</h5>
+  
+
+
+<h6>Mi sexto heading</h6>
+    <p> en este apartado agregaremos una imagen a nuestra pagina web, hay dos maneras de hacerlo<br> 
+        una es mediante una pagina web que contenga la imagen y la otra es tenerla en la misma carpeta que nuestro<br>
+codigo de la pagina y si esta en sub carpetas, indicar la direccion</p>
+<img src="img/gatito.png" width="300"/>
+
+<p> tambien se puede cambiar el tamaño a la imagen con la etiqueta width o height e indicando el tamaño del ancho de los pixeles</p>
+
+<h1>aqui empezaremos a pedir informacion al usuario</h1>
+<p>aqui empezamos en la parte donde podemos pedir mediante cuadros de datos que el usuario interactue<br>
+mediante la etiqueda form empezaremos un formulario y todo lo que este dentro de este sera con ese fin <br>
+para crear un ciadro donde se ingrese texto mediante el teclado usaremos la etiqueta input<br>
+y para asignar un texto para ese recuadro se usa la etiqueta label la cual con la propiedad for y la propiedad id en input se podran autoreferenciar al hacer click<br>
+igual al usar la propiedad name en el input podremos almacenar los datos en "una carpeta" o caracterizar los datos recibidos de alguna manera especifica <br>
+tambien existe la propiedad de placeholder para poner una sugerencia dentro del recuadro de recopilacion de datos<br>
+y por ultimo la propiedad de type para input caracteriza que tipo de dato le pedira al usuario<br>
+
+</p>
+<form action="formulario.txt" method="post">
+    <label for="nombre"> ingrese su nombre</label>
+<input type="text" id="nombre" name="nombre" placeholder="David"/>
+
+<label for="apellido"> ingrese su apellido</label>
+<input type="text" id="apellido" name="apellido" placeholder="pozo"/>
+
+<p> despues de esto igual podemos hacer un cuadro para ingresar texto mediante la etiqueta textarea<br>
+    el cual con la propiedad de rows se podra indicar el numero de filas y la propiedad de cols para la cantidad de columna <br>
+    esto le asigna un tamaño especifico a la caja de comentarios<br>
+    para enviar los datos existen dos opciones get y post el cual uno envia los datos mediante la url y el otro mediante la network<br>
+    y para asignar a donde se enviara la informacion se usara la propiedad action seguido de la direccion a donde se enviara<br>
+
+</p>
+<label for="comentario">comentario</label>
+<br>
+<textarea cols="50" rows="5" id="comentario"   placeholder="ingresa un comentario" name="comentario"></textarea>
+<br>
+<input type="submit"/>
+<p>igual se puede agregar un boton con la capacidad de personalizar el texto interior para enviar, resetear o hacer una accion especifica mediante la etiqueta button<br>
+<button type="submit">enviar informacion</button>
+<br>
+<br>
+tambien se pueden hacer listas ordenadas y no ordenadas. la diferencia es que se enumeran y las otras no, esto mediante las etiquetas de ul para las no ordenadas y ol para las ordenadas <br>
+con las etiquetas li se enlistan los elementos
+</p>
+<ul>
+    <li> elemento 1</li>
+    <li> elemento 2</li>
+    <li> elemento 3</li>
+</ul>
+
+<ol>
+    <li> elemento 1</li>
+    <li> elemento 2</li>
+    <li> elemento 3</li>
+</ol>
+
+
+<p>tambien se puede indicar a partir de que valor empezara la lista ordenada mediante la propiedad value y indicando desde que valor empezara<br>
+    tambien se pueden hacer subniveles para el enlistado metiendo dentro de li otro lo la cual creara dentro de la lista que ya tenemos, una nueva lista<br>
+y con la caracteristica style se puede cambiar el tipo de enlistado entre numeros letras y etc...
+</p>
+<ol>
+    <li value="50"> elemento 1</li>
+    <li> elemento 2</li>
+    <li> elemento 3</li>
+    <li>
+        <ol>
+            <li style="list-style-type:lower-alpha ;"> subnivel uno</li>
+            <li style="list-style-type:lower-alpha ;"> subnivel 2</li>
+        </ol>
+    </li>
+</ol>
+
+</form>
+
+<h2> tablas en html</h2>
+<p>en este apartado veremos como hacer tablas en las paginas web. principalmente se hace con la etiqueta table donde todo lo que este dentro seran los elementos de una tabla<br>
+    mediante la etiqueta tr (table rows)indicaremos los renglones de la tabla, con las etiquedas de th(table head) podemos poner titulos a los renglones<br>
+    con la etiqueda de td( table date) podremos agregar datos estandares dentro de nuestra tabla<br>
+al agregar otro tr estaras agregando otra fila con la cantidad de columnas que hayas asignado mediante th<br>
+dandole a la etiqueta table propiedad de style podras asignar espacio entre los datos<br>
+con ayuda del lenguaje css fuera del body se puede aplicar este estilo a cada elemento de la tabla aplicando una etiqueta de nombre style y mencionando que para la tabla, para th y para td se le asignaran esas caracteristicas<br>
+poniendo las propiedades dentro de llaves<br>
+dentro de la etiqueta table podemos utilizar una proiedad para hacer mas grande nuestra tabla mediante la propiedad style<br>
+usando thead y tbody podremos indicar cuales son las cabeceras y cual es el cuerpo de nuestra tabla.<br>
+
+</p>
+<table style="width: 500px;">
+<thead>
+    <tr>
+        <th>  primera columna</th>
+        <th>  segunda columna</th>
+        <th>  tercera columna</th>
+    
+    </tr>    
+</thead>
+
+<tbody>
+    <tr>
+        <td> dato 1</td>
+        <td> dato 2</td>
+        <td> dato 3</td>
+        
+        </tr>
+        
+        </tr>
+        
+        <tr>
+        <td> dato 4</td>
+        <td> dato 5</td>
+        <td> dato 6</td>
+        
+        </tr>
+        
+</tbody>
+</table>
+
+</body>
+    </html>
+    
